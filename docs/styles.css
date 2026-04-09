@@ -106,12 +106,33 @@ h2 {
   margin-top: 1.75rem;
 }
 
+.hero-actions {
+  margin-top: 1.25rem;
+}
+
 .hero-meta span {
   padding: 0.7rem 1rem;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.03);
   color: var(--text);
+}
+
+.repo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.15rem;
+  border: 1px solid rgba(118, 247, 197, 0.35);
+  border-radius: 999px;
+  background: rgba(118, 247, 197, 0.08);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.repo-link:hover,
+.repo-link:focus-visible {
+  background: rgba(118, 247, 197, 0.16);
 }
 
 main {
