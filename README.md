@@ -2,6 +2,8 @@
 
 This repository documents how I use an Ubuntu home server to replace a handful of cloud services with self-hosted alternatives. It covers the current stack, how the services are organized, and where each app is managed from.
 
+For setup instructions, see [GUIDE.md](GUIDE.md).
+
 Current setup:
 - Hostname: `ubuntu-server`
 - OS: `Ubuntu 24.04.4 LTS`
