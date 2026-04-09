@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Server</title>
+  <meta
+    name="description"
+    content="A simple GitHub Pages site for this repository, showing the self-hosted home server stack and the services it replaces."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Self-Hosted Stack</p>
+      <h1>How I Replaced Cloud Services With My Home Server</h1>
+      <p class="hero-copy">
+        This repository documents an Ubuntu home server that replaces common hosted services with a small,
+        practical self-hosted stack built around Docker, Tailscale, and a few focused apps.
+      </p>
+      <div class="hero-meta">
+        <span>Ubuntu 24.04.4 LTS</span>
+        <span>Docker-based</span>
+        <span>Remote access with Tailscale</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2>What the server handles</h2>
+        </div>
+        <div class="service-grid compact">
+          <article class="service-card">
+            <h3>Nextcloud</h3>
+            <p>Personal cloud storage and file sync.</p>
+          </article>
+          <article class="service-card">
+            <h3>Immich</h3>
+            <p>Photo and video backup with a modern gallery.</p>
+          </article>
+          <article class="service-card">
+            <h3>Navidrome</h3>
+            <p>Music streaming for a personal library.</p>
+          </article>
+          <article class="service-card">
+            <h3>Gitea</h3>
+            <p>Self-hosted Git hosting and web UI.</p>
+          </article>
+          <article class="service-card">
+            <h3>Portainer</h3>
+            <p>Docker management and container visibility.</p>
+          </article>
+          <article class="service-card">
+            <h3>Host Services</h3>
+            <p>SSH, UFW, Docker, and Tailscale on Ubuntu.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-layout">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Cloud Replacements</p>
+            <h2>Hosted tools this setup replaces</h2>
+          </div>
+          <div class="replacement-list">
+            <div>
+              <strong>Dropbox / Google Drive</strong>
+              <p>Replaced by Nextcloud for personal file storage and sync.</p>
+            </div>
+            <div>
+              <strong>Google Photos</strong>
+              <p>Replaced by Immich for media backup and browsing.</p>
+            </div>
+            <div>
+              <strong>Hosted music services</strong>
+              <p>Replaced by Navidrome for streaming my own library.</p>
+            </div>
+            <div>
+              <strong>GitHub / GitLab</strong>
+              <p>Partly replaced by Gitea for personal project hosting.</p>
+            </div>
+            <div>
+              <strong>Hosted admin dashboards</strong>
+              <p>Replaced by Portainer for container management.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="info-panel">
+          <p class="eyebrow">Host Snapshot</p>
+          <ul>
+            <li><strong>Hostname:</strong> <code>ubuntu-server</code></li>
+            <li><strong>OS:</strong> <code>Ubuntu 24.04.4 LTS</code></li>
+            <li><strong>Kernel:</strong> <code>Linux 6.8.0-107-generic</code></li>
+            <li><strong>Access:</strong> <code>SSH</code> and <code>Tailscale</code></li>
+            <li><strong>Firewall:</strong> <code>ufw</code> enabled</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Service Gallery</p>
+          <h2>Screenshots from the stack</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-full-image="screenshots/nextcloud-dashboard.png"
+              data-image-alt="Nextcloud dashboard screenshot"
+            >
+              <img src="screenshots/nextcloud-dashboard.png" alt="Nextcloud dashboard screenshot">
+            </button>
+            <figcaption>Nextcloud dashboard</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-full-image="screenshots/immich-timeline.png"
+              data-image-alt="Immich timeline screenshot"
+            >
+              <img src="screenshots/immich-timeline.png" alt="Immich timeline screenshot">
+            </button>
+            <figcaption>Immich timeline</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-full-image="screenshots/navidrome-library.png"
+              data-image-alt="Navidrome library screenshot"
+            >
+              <img src="screenshots/navidrome-library.png" alt="Navidrome library screenshot">
+            </button>
+            <figcaption>Navidrome library</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-full-image="screenshots/gitea-dashboard.png"
+              data-image-alt="Gitea dashboard screenshot"
+            >
+              <img src="screenshots/gitea-dashboard.png" alt="Gitea dashboard screenshot">
+            </button>
+            <figcaption>Gitea dashboard</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <button
+              class="gallery-trigger"
+              type="button"
+              data-full-image="screenshots/portainer-dashboard.png"
+              data-image-alt="Portainer dashboard screenshot"
+            >
+              <img src="screenshots/portainer-dashboard.png" alt="Portainer dashboard screenshot">
+            </button>
+            <figcaption>Portainer dashboard</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-backdrop" data-close-lightbox></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Expanded screenshot">
+      <button class="lightbox-close" type="button" aria-label="Close image" data-close-lightbox>&times;</button>
+      <img id="lightbox-image" src="" alt="">
+    </div>
+  </div>
+
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const triggers = document.querySelectorAll(".gallery-trigger");
+    const closeTargets = document.querySelectorAll("[data-close-lightbox]");
+
+    function closeLightbox() {
+      lightbox.hidden = true;
+      lightboxImage.src = "";
+      lightboxImage.alt = "";
+      document.body.classList.remove("lightbox-open");
+    }
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener("click", () => {
+        lightboxImage.src = trigger.dataset.fullImage;
+        lightboxImage.alt = trigger.dataset.imageAlt;
+        lightbox.hidden = false;
+        document.body.classList.add("lightbox-open");
+      });
+    });
+
+    closeTargets.forEach((element) => {
+      element.addEventListener("click", closeLightbox);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !lightbox.hidden) {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
