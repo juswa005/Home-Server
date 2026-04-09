@@ -185,14 +185,8 @@ Restart policy:
 
 ### Screenshot
 
-Recommended screenshot:
-- Immich timeline or photo gallery view
-
-Image slot:
-
-```md
 ![Immich timeline](docs/screenshots/immich-timeline.png)
-```
+
 
 ### Navidrome
 
@@ -220,14 +214,8 @@ Restart policy:
 
 ### Screenshot
 
-Recommended screenshot:
-- Album library page or currently playing screen
-
-Image slot:
-
-```md
 ![Navidrome library](docs/screenshots/navidrome-library.png)
-```
+
 
 ### Gitea
 
@@ -258,14 +246,8 @@ Restart policy:
 
 ### Screenshot
 
-Recommended screenshot:
-- Gitea dashboard, profile page, or repository list
-
-Image slot:
-
-```md
 ![Gitea dashboard](docs/screenshots/gitea-dashboard.png)
-```
+
 
 ### Portainer
 
@@ -287,14 +269,7 @@ Notes:
 
 ### Screenshot
 
-Recommended screenshot:
-- Portainer dashboard showing container or environment overview
-
-Image slot:
-
-```md
 ![Portainer dashboard](docs/screenshots/portainer-dashboard.png)
-```
 
 ## Open Ports
 
