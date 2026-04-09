@@ -183,6 +183,12 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.mobile-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .gallery-card {
   margin: 0;
   overflow: hidden;
@@ -194,6 +200,11 @@ main {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+}
+
+.portrait-card img {
+  aspect-ratio: 9 / 19.5;
+  object-position: top;
 }
 
 .gallery-trigger {
@@ -294,7 +305,8 @@ main {
 
   .service-grid,
   .split-layout,
-  .gallery-grid {
+  .gallery-grid,
+  .mobile-grid {
     grid-template-columns: 1fr;
   }
 }

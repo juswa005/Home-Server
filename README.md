@@ -289,3 +289,11 @@ Application directories under `/home/josh`:
 - `/home/josh/gitea`
 
 This means each major app is managed independently rather than through a single monorepo deployment directory.
+
+## Mobile Access
+
+I can also access parts of this self-hosted setup from my iPhone over my remote access setup.
+
+| Immich | Substreamer | ServerCat |
+| --- | --- | --- |
+| ![Immich on iPhone](docs/screenshots/Immich-iphone.jpeg) | ![Substreamer on iPhone](docs/screenshots/Substreamer-iphone.jpeg) | ![ServerCat on iPhone](docs/screenshots/ServerCat-iphone.jpeg) |
