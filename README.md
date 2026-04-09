@@ -146,7 +146,8 @@ Restart policy:
 ### Screenshot
 
 ![Nextcloud dashboard](docs/screenshots/nextcloud-dashboard.png)
-```
+
+
 ### Immich
 
 Purpose:
