@@ -145,15 +145,8 @@ Restart policy:
 
 ### Screenshot
 
-Recommended screenshot:
-- Nextcloud Files dashboard or main home page after login
-
-Image slot:
-
-```md
 ![Nextcloud dashboard](docs/screenshots/nextcloud-dashboard.png)
 ```
-
 ### Immich
 
 Purpose:
